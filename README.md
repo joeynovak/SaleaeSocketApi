@@ -1,3 +1,8 @@
+# Changes from official Saleae Distribution
+
+SaleaeClient.WaitForResponse - Allows you to disable waiting for responses when calling commands.
+SaleaeClient.Close() - Allows you to close the connection manually.
+
 # Saleae Socket API C# Wrapper and Example Projects
 
 This example was created with Visual Studio 2013 and targets the Microsoft .NET 4.5 runtime.
