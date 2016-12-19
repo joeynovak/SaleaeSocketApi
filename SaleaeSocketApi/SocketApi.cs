@@ -12,7 +12,7 @@ namespace Saleae.SocketApi
 	{
 
 		public static bool PrintCommandsToConsole = false;
-
+	   public bool WaitForResponse { get; set; } = true;
 		TcpClient Socket;
 		NetworkStream Stream;
 		int port;
@@ -65,6 +65,12 @@ namespace Saleae.SocketApi
 			Stream = Socket.GetStream();
 		}
 
+	   public void Close()
+	   {
+	      if(Socket.Connected)
+            Socket.Close();         
+	   }
+
 		private void WriteString( String str )
 		{
 			byte[] data = str.toByteArray().Concat( "\0".toByteArray() ).ToArray();
@@ -76,6 +82,11 @@ namespace Saleae.SocketApi
 
 		private void GetResponse( ref String response )
 		{
+		   if (!WaitForResponse)
+		   {
+		      return;
+		   }
+
 			while( ( String.IsNullOrEmpty( response ) ) )
 			{
 				response += Stream.ReadString();

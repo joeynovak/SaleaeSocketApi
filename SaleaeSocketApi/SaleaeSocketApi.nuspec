@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>JoeyNovak.NotOwned.Saleae.SocketApi</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Saleae</authors>
+    <owners>Saleae</owners>    
+    <projectUrl>https://github.com/joeynovak/SaleaeSocketApi</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/4604597?v=3&amp;s=200</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Saleae Logic Socket API Library</description>
+    <summary>This was developed by Saleae, I (Joey Novak) packaged it and have uploaded it to nuget so it is easy to add to a project.  I am not a maintainer or author of the project, however I will maintain the nuget package as needed.</summary>
+    <releaseNotes>None</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Saleae Logic Analyzer SaleaeSocketApi</tags>
+  </metadata>
+</package>
