@@ -2,4 +2,5 @@
 [Oo]bj
 *.suo
 *.user
+*.nupkg
 packages/*
